@@ -1,0 +1,6 @@
+git init
+git add *
+git commit -m "test0.0"
+curl -u 'git-kuray' https://api.github.com/user/repos -d'{"name":"test_push"}'
+git remote add -u origin https://github.com/git-kuray/test_push
+git push -u origin master
